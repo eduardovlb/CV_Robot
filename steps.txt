@@ -5,6 +5,4 @@
 5. Test in practice.
 
 
-The idea is for the robot recognize objects and organize them. If it detects a screw, it will put it with others screws. If it finds a pen, it will put it with pens. Not sure
-which objects I'm gonna use, but firstly I need to get the code for it. Maybe I'll use some reinforcement learning for the tracking and organizing thing, but if it's too complicated
-I'm not doing it, training takes time.
+The idea is for the robot recognize objects and organize them. If it detects a screw, it will put it with others screws. If it finds a pen, it will put it with pens. Not sure which objects I'm gonna use, but firstly I need to get the code for it. Maybe I'll use some reinforcement learning for the tracking and organizing thing, but if it's too complicated I'm not doing it, training takes time.
