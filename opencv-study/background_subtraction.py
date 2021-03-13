@@ -17,6 +17,8 @@ else:
     backSub = cv.createBackgroundSubtractorKNN()
 
 capture = cv.VideoCapture(cv.samples.findFileOrKeep(args.input))
+#capture = cv.VideoCapture('IMG_7034.mov')
+#resized = cv.resize(capture, (500, 500), interpolation=cv.INTER_AREA)
 if not capture.isOpened():
     print('Unable to open: ' + args.input)
     exit(0)
@@ -33,6 +35,8 @@ while True:
     cv.rectangle(frame, (10, 2), (100, 20), (255,255,255), -1)
     cv.putText(frame, str(capture.get(cv.CAP_PROP_POS_FRAMES)), (15, 15), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0))
 
+    #resized1 = cv.resize(frame, (800,600), fx=0, fy=0, interpolation=cv.INTER_CUBIC)
+    #resized2 = cv.resize(fgMask, (800,600), fx=0, fy=0, interpolation=cv.INTER_CUBIC)
     cv.imshow('Frame', frame)
     cv.imshow('FG Mask', fgMask)
 
